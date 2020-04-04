@@ -1,0 +1,12 @@
+name: fakedart
+description: This library is a port of faker.js that generates fake data.
+version: 0.1.0
+homepage: https://github.com/tiagohm/fakedart
+
+environment:
+  sdk: '>=2.7.0 <3.0.0'
+
+dependencies:
+
+dev_dependencies:
+  test: ^1.14.2
