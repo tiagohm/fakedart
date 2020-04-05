@@ -182,3 +182,45 @@ faker.commerce.productName(); // returns "Intelligent Frozen Pants"
 ```dart
 faker.commerce.price(symbol: r'$'); // returns "$231.14"
 ```
+
+### Company
+
+```dart
+faker.company.bs(); // returns "visualize innovative web-readiness"
+```
+
+```dart
+faker.company.bsAdjective(); // returns "user-centric"
+```
+
+```dart
+faker.company.bsBuzz(); // returns "innovate"
+```
+
+```dart
+faker.company.bsNoun(); // returns "platforms"
+```
+
+```dart
+faker.company.catchPhrase(); // returns "Customer-focused web-enabled internet solution"
+```
+
+```dart
+faker.company.catchPhraseAdjective(); // returns "Enhanced"
+```
+
+```dart
+faker.company.catchPhraseDescriptor(); // returns "full-range"
+```
+
+```dart
+faker.company.catchPhraseNoun(); // returns "moderator"
+```
+
+```dart
+faker.company.companyName(); // returns "Schmitt, Davis & Gulgowski"
+```
+
+```dart
+faker.company.companySuffix(); // returns "Inc"
+```

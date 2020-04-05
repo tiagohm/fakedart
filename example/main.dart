@@ -1,7 +1,7 @@
 import 'package:fakedart/fakedart.dart';
 
 void main() {
-  final faker = Faker.seed(8);
+  final faker = Faker.seed(0);
 
   print(faker.address.cardinalDirection());
   print(faker.address.city());
@@ -39,4 +39,15 @@ void main() {
   print(faker.commerce.productMaterial());
   print(faker.commerce.productName());
   print(faker.commerce.price(symbol: r'$'));
+
+  print(faker.company.bs());
+  print(faker.company.bsAdjective());
+  print(faker.company.bsBuzz());
+  print(faker.company.bsNoun());
+  print(faker.company.catchPhrase());
+  print(faker.company.catchPhraseAdjective());
+  print(faker.company.catchPhraseDescriptor());
+  print(faker.company.catchPhraseNoun());
+  print(faker.company.companyName());
+  print(faker.company.companySuffix());
 }

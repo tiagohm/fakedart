@@ -98,6 +98,20 @@ abstract class Definitions {
   List<String> productMaterial();
 
   List<String> product();
+
+  List<String> companyAdjective();
+
+  List<String> bsAdjective();
+
+  List<String> bsNoun();
+
+  List<String> bsVerb();
+
+  List<String> companyDescriptor();
+
+  List<String> companyNoun();
+
+  List<String> companySuffix();
 }
 
 // Fallback definitions.
@@ -217,6 +231,27 @@ class _EnDefinitions implements Definitions {
 
   @override
   List<String> productMaterial() => en.productMaterial;
+
+  @override
+  List<String> bsAdjective() => en.bsAdjective;
+
+  @override
+  List<String> bsNoun() => en.bsNoun;
+
+  @override
+  List<String> bsVerb() => en.bsVerb;
+
+  @override
+  List<String> companyAdjective() => en.companyAdjective;
+
+  @override
+  List<String> companyDescriptor() => en.companyDescriptor;
+
+  @override
+  List<String> companyNoun() => en.companyNoun;
+
+  @override
+  List<String> companySuffix() => en.companySuffix;
 }
 
 class _EnUsDefinitions extends _EnDefinitions {

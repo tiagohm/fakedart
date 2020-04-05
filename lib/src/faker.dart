@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:fakedart/src/address.dart';
 import 'package:fakedart/src/commerce.dart';
+import 'package:fakedart/src/company.dart';
 import 'package:fakedart/src/definitions.dart';
 import 'package:fakedart/src/helpers.dart';
 import 'package:fakedart/src/name.dart';
@@ -15,6 +16,7 @@ class Faker {
   Address _address;
   Name _name;
   Commerce _commerce;
+  Company _company;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -52,4 +54,6 @@ class Faker {
   Name get name => _name ??= Name(this);
 
   Commerce get commerce => _commerce ??= Commerce(this);
+
+  Company get company => _company ??= Company(this);
 }
