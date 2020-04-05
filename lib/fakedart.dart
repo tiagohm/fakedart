@@ -1,3 +1,4 @@
 library fakedart;
 
-export 'src/fakedart.dart';
+export 'src/faker.dart';
+export 'src/gender.dart';
