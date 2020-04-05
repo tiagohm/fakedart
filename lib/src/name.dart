@@ -69,6 +69,28 @@ class Name {
     return faker.random.list(faker.definitions.nameSuffix());
   }
 
+  String fullName([Gender gender]) {
+    final first = firstName(gender);
+    final last = lastName(gender);
+    final n = faker.random.rand(9);
+
+    if (n == 0) {
+      final p = prefix(gender);
+
+      if (p != null) {
+        return '$p $first $last';
+      }
+    } else if (n == 1) {
+      final s = suffix(gender);
+
+      if (s != null) {
+        return '$s $first $last';
+      }
+    }
+
+    return '$first $last';
+  }
+
   String jobTitle() {
     return '${jobDescriptor()} ${jobArea()} ${jobType()}';
   }

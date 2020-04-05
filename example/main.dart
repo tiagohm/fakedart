@@ -31,6 +31,7 @@ void main() {
   print(faker.name.lastName(Gender.male));
   print(faker.name.prefix());
   print(faker.name.suffix());
+  print(faker.name.fullName());
 
   print(faker.commerce.color());
   print(faker.commerce.department());
