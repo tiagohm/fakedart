@@ -51,4 +51,9 @@ void main() {
   print(faker.company.catchPhraseNoun());
   print(faker.company.companyName());
   print(faker.company.companySuffix());
+
+  print(faker.database.engine());
+  print(faker.database.collation());
+  print(faker.database.column());
+  print(faker.database.type());
 }

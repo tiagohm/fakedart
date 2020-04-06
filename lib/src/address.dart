@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:fakedart/src/faker.dart';
-import 'package:fakedart/src/random.dart';
 
 class Address {
   final Faker faker;
@@ -23,12 +22,12 @@ class Address {
   String zipCodeByState(String state) {
     final range = faker.definitions.postCodeByState(state);
     return range != null && range.isNotEmpty
-        ? faker.random.rand(range[1], range[0])
+        ? faker.random.nextInt(range[1], range[0])
         : zipCode();
   }
 
   String city() {
-    final format = faker.random.rand(4);
+    final format = faker.random.nextInt(4);
 
     if (format == 0) {
       return '${cityPrefix()} ${faker.name.firstName()}${citySuffix()}';
@@ -73,7 +72,7 @@ class Address {
     bool full = false,
   }) {
     final number = faker.helpers.replaceSymbolWithNumber(
-      '###'.padRight(faker.random.rand(6, 3), '#'),
+      '###'.padRight(faker.random.nextInt(6, 3), '#'),
     );
 
     if (full) {
@@ -125,7 +124,7 @@ class Address {
     precision ??= 4;
 
     return faker.random
-        .number(max: max, min: min, precision: pow(10.0, -precision))
+        .nextNumber(max: max, min: min, precision: pow(10.0, -precision))
         .toStringAsFixed(precision);
   }
 
@@ -139,7 +138,7 @@ class Address {
     precision ??= 4;
 
     return faker.random
-        .number(max: max, min: min, precision: pow(10.0, -precision))
+        .nextNumber(max: max, min: min, precision: pow(10.0, -precision))
         .toStringAsFixed(precision);
   }
 

@@ -112,6 +112,14 @@ abstract class Definitions {
   List<String> companyNoun();
 
   List<String> companySuffix();
+
+  List<String> databaseCollation();
+
+  List<String> databaseColumn();
+
+  List<String> databaseEngine();
+
+  List<String> databaseType();
 }
 
 // Fallback definitions.
@@ -252,6 +260,18 @@ class _EnDefinitions implements Definitions {
 
   @override
   List<String> companySuffix() => en.companySuffix;
+
+  @override
+  List<String> databaseCollation() => en.databaseCollation;
+
+  @override
+  List<String> databaseColumn() => en.databaseColumn;
+
+  @override
+  List<String> databaseEngine() => en.databaseEngine;
+
+  @override
+  List<String> databaseType() => en.databaseType;
 }
 
 class _EnUsDefinitions extends _EnDefinitions {

@@ -122,6 +122,14 @@ faker.name.firstName(); // returns "Elta"
 ```
 
 ```dart
+faker.name.lastName(Gender.male); // returns "Kreiger"
+```
+
+```dart
+faker.name.fullName(); // returns "Tracy Jaskolski"
+```
+
+```dart
 faker.name.gender(); // returns "Man"
 ```
 
@@ -139,10 +147,6 @@ faker.name.jobTitle(); // returns "Lead Integration Technician"
 
 ```dart
 faker.name.jobType(); // returns "Director"
-```
-
-```dart
-faker.name.lastName(Gender.male); // returns "Kreiger"
 ```
 
 ```dart
@@ -223,4 +227,23 @@ faker.company.companyName(); // returns "Schmitt, Davis & Gulgowski"
 
 ```dart
 faker.company.companySuffix(); // returns "Inc"
+```
+
+### Database
+
+
+```dart
+faker.database.engine(); // returns "ARCHIVE"
+```
+
+```dart
+faker.database.collation(); // returns "cp1250_general_ci"
+```
+
+```dart
+faker.database.column(); // returns "group"
+```
+
+```dart
+faker.database.type(); // returns "smallint"
 ```

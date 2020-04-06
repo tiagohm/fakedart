@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:fakedart/src/random.dart';
 import 'package:test/test.dart';
 
@@ -10,7 +8,7 @@ void main() {
     final c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     for (var i = 0; i < 100; i++) {
-      c[random.rand(10)]++;
+      c[random.nextInt(10)]++;
     }
 
     var sum = 0;
@@ -29,7 +27,7 @@ void main() {
     final c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
     for (var i = 0; i < 100; i++) {
-      c[random.rand(8, 4)]++;
+      c[random.nextInt(8, 4)]++;
     }
 
     var sum = 0;

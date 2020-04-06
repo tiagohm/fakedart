@@ -1,11 +1,11 @@
-import 'dart:math';
-
 import 'package:fakedart/src/address.dart';
 import 'package:fakedart/src/commerce.dart';
 import 'package:fakedart/src/company.dart';
+import 'package:fakedart/src/database.dart';
 import 'package:fakedart/src/definitions.dart';
 import 'package:fakedart/src/helpers.dart';
 import 'package:fakedart/src/name.dart';
+import 'package:fakedart/src/random.dart';
 
 class Faker {
   final Random random;
@@ -17,6 +17,7 @@ class Faker {
   Name _name;
   Commerce _commerce;
   Company _company;
+  Database _database;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -32,7 +33,7 @@ class Faker {
     int seed, {
     String locale = 'en',
   }) {
-    return Faker._(Random(seed), locale);
+    return Faker._(Random.seed(seed), locale);
   }
 
   factory Faker.secure({
@@ -56,4 +57,6 @@ class Faker {
   Commerce get commerce => _commerce ??= Commerce(this);
 
   Company get company => _company ??= Company(this);
+
+  Database get database => _database ??= Database(this);
 }

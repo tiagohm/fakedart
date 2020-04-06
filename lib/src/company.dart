@@ -1,5 +1,4 @@
 import 'package:fakedart/src/faker.dart';
-import 'package:fakedart/src/random.dart';
 
 class Company {
   final Faker faker;
@@ -9,7 +8,7 @@ class Company {
   String companyName() {
     final name = faker.name;
 
-    switch (faker.random.rand(3)) {
+    switch (faker.random.nextInt(3)) {
       case 0:
         return '${name.lastName()} ${companySuffix()}';
       case 1:

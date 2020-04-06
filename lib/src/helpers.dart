@@ -1,5 +1,4 @@
 import 'package:fakedart/src/faker.dart';
-import 'package:fakedart/src/random.dart';
 
 class Helpers {
   final Faker faker;
@@ -16,13 +15,13 @@ class Helpers {
         final c = text[i];
 
         if (c == '#') {
-          sb.write(faker.random.rand(10));
+          sb.write(faker.random.nextInt(10));
         } else if (c == '?') {
           sb.write(faker.random.char(alpha));
         } else if (c == '*') {
           sb.write(faker.random.nextBool()
               ? faker.random.char(alpha)
-              : faker.random.rand(10));
+              : faker.random.nextInt(10));
         } else {
           sb.write(c);
         }
@@ -43,9 +42,9 @@ class Helpers {
         final c = text[i];
 
         if (c == symbol) {
-          sb.write(faker.random.rand(10));
+          sb.write(faker.random.nextInt(10));
         } else if (c == '!') {
-          sb.write(faker.random.rand(10, 2));
+          sb.write(faker.random.nextInt(10, 2));
         } else {
           sb.write(c);
         }

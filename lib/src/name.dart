@@ -1,6 +1,5 @@
 import 'package:fakedart/src/faker.dart';
 import 'package:fakedart/src/gender.dart';
-import 'package:fakedart/src/random.dart';
 
 class Name {
   final Faker faker;
@@ -72,7 +71,7 @@ class Name {
   String fullName([Gender gender]) {
     final first = firstName(gender);
     final last = lastName(gender);
-    final n = faker.random.rand(9);
+    final n = faker.random.nextInt(9);
 
     if (n == 0) {
       final p = prefix(gender);

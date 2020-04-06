@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:fakedart/src/faker.dart';
-import 'package:fakedart/src/random.dart';
 
 class Commerce {
   final Faker faker;
@@ -36,7 +35,7 @@ class Commerce {
     }
 
     final value =
-        faker.random.number(max: max, min: min, precision: pow(10, -precision));
+        faker.random.nextNumber(max: max, min: min, precision: pow(10, -precision));
 
     return symbol + value.toStringAsFixed(precision);
   }

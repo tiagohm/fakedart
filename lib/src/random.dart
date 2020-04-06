@@ -1,19 +1,29 @@
-import 'dart:math';
+import 'dart:math' as math;
 
-extension RandomExtension on Random {
-  int rand(
-    // exclusive
+class Random {
+  final math.Random _random;
+
+  Random() : _random = math.Random();
+
+  Random.seed(int seed) : _random = math.Random(seed);
+
+  Random.secure() : _random = math.Random.secure();
+
+  bool nextBool() => _random.nextBool();
+
+  int nextInt(
+    // exclusive.
     num max, [
     num min,
   ]) {
     max ??= 32768;
     min ??= 0;
 
-    return (nextDouble() * (max - min) + min).floor();
+    return (_random.nextDouble() * (max - min) + min).floor();
   }
 
-  double number({
-    double max, // inclusive
+  double nextNumber({
+    double max, // inclusive.
     double min,
     double precision,
   }) {
@@ -26,7 +36,7 @@ extension RandomExtension on Random {
       max += precision;
     }
 
-    final n = rand(max / precision, min / precision);
+    final n = nextInt(max / precision, min / precision);
 
     // Workaround problem in Float point arithmetics for e.g. 6681493 / 0.01
     return n / (1 / precision);
@@ -34,13 +44,13 @@ extension RandomExtension on Random {
 
   String char(String text) {
     if (text == null || text.isEmpty) return null;
-    final n = text.length == 1 ? 0 : rand(text.length);
+    final n = text.length == 1 ? 0 : nextInt(text.length);
     return text[n];
   }
 
   T list<T>(List<T> list) {
     if (list == null || list.isEmpty) return null;
-    final n = list.length == 1 ? 0 : rand(list.length);
+    final n = list.length == 1 ? 0 : nextInt(list.length);
     return list[n];
   }
 }
