@@ -247,3 +247,33 @@ faker.database.column(); // returns "group"
 ```dart
 faker.database.type(); // returns "smallint"
 ```
+
+### Date
+
+```dart
+faker.date.between(DateTime(1994, 1, 1), DateTime.now()); // returns "1994-07-02 06:13:56.177"
+```
+
+```dart
+faker.date.future(); // returns "2020-05-28 23:44:27.156"
+```
+
+```dart
+faker.date.past(); // returns "2019-12-13 04:30:22.968"
+```
+
+```dart
+faker.date.recent(); // returns "2020-04-13 13:13:02.628"
+```
+
+```dart
+faker.date.soon(); // returns "2020-04-15 06:22:24.483"
+```
+
+```dart
+faker.date.weekday(); // returns "Sunday"
+```
+
+```dart
+faker.date.month(abbr: true); // returns "Nov"
+```

@@ -56,4 +56,12 @@ void main() {
   print(faker.database.collation());
   print(faker.database.column());
   print(faker.database.type());
+
+  print(faker.date.between(DateTime(1994, 1, 1), DateTime.now()));
+  print(faker.date.future());
+  print(faker.date.past());
+  print(faker.date.recent());
+  print(faker.date.soon());
+  print(faker.date.weekday());
+  print(faker.date.month(abbr: true));
 }

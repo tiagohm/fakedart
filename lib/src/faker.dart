@@ -2,6 +2,7 @@ import 'package:fakedart/src/address.dart';
 import 'package:fakedart/src/commerce.dart';
 import 'package:fakedart/src/company.dart';
 import 'package:fakedart/src/database.dart';
+import 'package:fakedart/src/date.dart';
 import 'package:fakedart/src/definitions.dart';
 import 'package:fakedart/src/helpers.dart';
 import 'package:fakedart/src/name.dart';
@@ -18,6 +19,7 @@ class Faker {
   Commerce _commerce;
   Company _company;
   Database _database;
+  Date _date;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -59,4 +61,6 @@ class Faker {
   Company get company => _company ??= Company(this);
 
   Database get database => _database ??= Database(this);
+
+  Date get date => _date ??= Date(this);
 }

@@ -120,6 +120,14 @@ abstract class Definitions {
   List<String> databaseEngine();
 
   List<String> databaseType();
+
+  List<String> month();
+
+  List<String> monthAbbr();
+
+  List<String> weekday();
+
+  List<String> weekdayAbbr();
 }
 
 // Fallback definitions.
@@ -272,6 +280,18 @@ class _EnDefinitions implements Definitions {
 
   @override
   List<String> databaseType() => en.databaseType;
+
+  @override
+  List<String> month() => en.month;
+
+  @override
+  List<String> monthAbbr() => en.monthAbbr;
+
+  @override
+  List<String> weekday() => en.weekday;
+
+  @override
+  List<String> weekdayAbbr() => en.weekdayAbbr;
 }
 
 class _EnUsDefinitions extends _EnDefinitions {
