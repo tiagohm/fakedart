@@ -53,4 +53,10 @@ class Helpers {
 
     return sb.toString();
   }
+
+  static final _slugifyRegex = RegExp(r'[^\w\.\-]+');
+
+  String slugify(String text) {
+    return text.replaceAll(' ', '-').replaceAll(_slugifyRegex, '');
+  }
 }

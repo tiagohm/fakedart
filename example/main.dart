@@ -64,4 +64,31 @@ void main() {
   print(faker.date.soon());
   print(faker.date.weekday());
   print(faker.date.month(abbr: true));
+
+  print(faker.hacker.abbreviation());
+  print(faker.hacker.adjective());
+  print(faker.hacker.ingVerb());
+  print(faker.hacker.noun());
+  print(faker.hacker.phrase());
+  print(faker.hacker.verb());
+
+  print(faker.git.branch());
+  print(faker.git.commitEntry());
+  print(faker.git.commitMessage());
+  print(faker.git.commitSha());
+  print(faker.git.shortSha());
+
+  print(faker.internet.avatar());
+  print(faker.internet.color());
+  print(faker.internet.domainName());
+  print(faker.internet.domainSuffix());
+  print(faker.internet.domainWord());
+  print(faker.internet.email());
+  print(faker.internet.exampleEmail());
+  print(faker.internet.ip());
+  print(faker.internet.ipv6());
+  print(faker.internet.mac());
+  print(faker.internet.protocol());
+  print(faker.internet.url());
+  print(faker.internet.userName());
 }

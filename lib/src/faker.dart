@@ -4,7 +4,10 @@ import 'package:fakedart/src/company.dart';
 import 'package:fakedart/src/database.dart';
 import 'package:fakedart/src/date.dart';
 import 'package:fakedart/src/definitions.dart';
+import 'package:fakedart/src/git.dart';
+import 'package:fakedart/src/hacker.dart';
 import 'package:fakedart/src/helpers.dart';
+import 'package:fakedart/src/internet.dart';
 import 'package:fakedart/src/name.dart';
 import 'package:fakedart/src/random.dart';
 
@@ -20,6 +23,9 @@ class Faker {
   Company _company;
   Database _database;
   Date _date;
+  Hacker _hacker;
+  Git _git;
+  Internet _internet;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -63,4 +69,10 @@ class Faker {
   Database get database => _database ??= Database(this);
 
   Date get date => _date ??= Date(this);
+
+  Hacker get hacker => _hacker ??= Hacker(this);
+
+  Git get git => _git ??= Git(this);
+
+  Internet get internet => _internet ??= Internet(this);
 }

@@ -277,3 +277,105 @@ faker.date.weekday(); // returns "Sunday"
 ```dart
 faker.date.month(abbr: true); // returns "Nov"
 ```
+
+### Hacker
+
+```dart
+faker.hacker.abbreviation(); // returns "JSON"
+```
+
+```dart
+faker.hacker.adjective(); // returns "back-end"
+```
+
+```dart
+faker.hacker.ingVerb(); // returns "indexing"
+```
+
+```dart
+faker.hacker.noun(); // returns "interface"
+```
+
+```dart
+faker.hacker.phrase(); // returns "The AGP hard drive is down, navigate the redundant hard drive so we can navigate the AGP hard drive!"
+```
+
+```dart
+faker.hacker.verb(); // returns "calculate"
+```
+
+### Git
+
+```dart
+faker.git.branch(); // returns "transmitter-transmit"
+```
+
+```dart
+faker.git.commitEntry(); // returns "commit 48548fe57716823bd206e2d9afdfca091c375f71..."
+```
+
+```dart
+faker.git.commitMessage(); // returns "generate cross-platform program"
+```
+
+```dart
+faker.git.commitSha(); // returns "0994c16cfdcb752d58b884fbe81f6ae2c9d0b98a"
+```
+
+```dart
+faker.git.shortSha(); // returns "e2b79c1"
+```
+
+### Internet
+
+```dart
+faker.internet.avatar(); // returns "https://s3.amazonaws.com/uifaces/faces/twitter/robergd/128.jpg"
+```
+
+```dart
+faker.internet.color(); // returns "#03764e"
+```
+
+```dart
+faker.internet.domainName(); // returns "khalid.biz"
+```
+
+```dart
+faker.internet.domainSuffix(); // returns "name"
+```
+
+```dart
+faker.internet.domainWord(); // returns "kenna"
+```
+
+```dart
+faker.internet.email(); // returns "Ike.Wolff31@yahoo.com"
+```
+
+```dart
+faker.internet.exampleEmail(); // returns "Jacinthe_Rodriguez9@example.com"
+```
+
+```dart
+faker.internet.ip(); // returns "62.215.32.241"
+```
+
+```dart
+faker.internet.ipv6(); // returns "8deb:d69a:ceca:7123:c7da:7e42:a4d5:9f60"
+```
+
+```dart
+faker.internet.mac(); // returns "a5:9f:30:71:3f:12"
+```
+
+```dart
+faker.internet.protocol(); // returns "http"
+```
+
+```dart
+faker.internet.url(); // returns "https://cynthia.biz"
+```
+
+```dart
+faker.internet.userName(); // returns "Weldon.Crooks78"
+```
