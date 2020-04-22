@@ -167,4 +167,6 @@ abstract class Definitions {
   List<String> creditCardProvider();
 
   List<String> creditCard(String provider);
+
+  List<String> phoneNumber();
 }

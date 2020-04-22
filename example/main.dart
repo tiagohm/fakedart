@@ -107,4 +107,7 @@ void main() {
   print(faker.finance.bic());
   print(faker.finance.creditCardProvider());
   print(faker.finance.creditCardNumber('JCB'));
+
+  print(faker.phoneNumber.phoneNumberFormat());
+  print(faker.phoneNumber.phoneNumber());
 }

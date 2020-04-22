@@ -441,3 +441,13 @@ faker.finance.creditCardProvider(); // returns "Visa"
 ```dart
 faker.finance.creditCardNumber(); // returns "3541001109818219"
 ```
+
+### Phone Number
+
+```dart
+faker.phoneNumber.phoneNumberFormat(); // returns "(!##) !##-####"
+```
+
+```dart
+faker.phoneNumber.phoneNumber(); // returns "222.547.8307"
+```

@@ -10,6 +10,7 @@ import 'package:fakedart/src/hacker.dart';
 import 'package:fakedart/src/helpers.dart';
 import 'package:fakedart/src/internet.dart';
 import 'package:fakedart/src/name.dart';
+import 'package:fakedart/src/phone_number.dart';
 import 'package:fakedart/src/random.dart';
 
 class Faker {
@@ -28,6 +29,7 @@ class Faker {
   Git _git;
   Internet _internet;
   Finance _finance;
+  PhoneNumber _phoneNumber;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -79,4 +81,6 @@ class Faker {
   Internet get internet => _internet ??= Internet(this);
 
   Finance get finance => _finance ??= Finance(this);
+
+  PhoneNumber get phoneNumber => _phoneNumber ??= PhoneNumber(this);
 }

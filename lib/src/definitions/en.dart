@@ -226,4 +226,7 @@ class EnDefinitions implements Definitions {
   @override
   List<String> creditCard(String provider) =>
       en.creditCard[provider] ?? const [];
+
+  @override
+  List<String> phoneNumber() => en.phoneNumber;
 }
