@@ -229,4 +229,16 @@ class EnDefinitions implements Definitions {
 
   @override
   List<String> phoneNumber() => en.phoneNumber;
+
+  @override
+  List<String> vehicleFuel() => en.vehicleFuel;
+
+  @override
+  List<String> vehicleManufacturer() => en.vehicleManufacturer;
+
+  @override
+  List<String> vehicleModel() => en.vehicleModel;
+
+  @override
+  List<String> vehicleType() => en.vehicleType;
 }

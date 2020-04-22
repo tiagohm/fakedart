@@ -110,4 +110,12 @@ void main() {
 
   print(faker.phoneNumber.phoneNumberFormat());
   print(faker.phoneNumber.phoneNumber());
+
+  print(faker.vehicle.color());
+  print(faker.vehicle.fuel());
+  print(faker.vehicle.manufacturer());
+  print(faker.vehicle.model());
+  print(faker.vehicle.type());
+  print(faker.vehicle.vehicle());
+  print(faker.vehicle.vin());
 }

@@ -169,4 +169,12 @@ abstract class Definitions {
   List<String> creditCard(String provider);
 
   List<String> phoneNumber();
+
+  List<String> vehicleFuel();
+
+  List<String> vehicleManufacturer();
+
+  List<String> vehicleModel();
+
+  List<String> vehicleType();
 }

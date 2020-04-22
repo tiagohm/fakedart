@@ -12,6 +12,7 @@ import 'package:fakedart/src/internet.dart';
 import 'package:fakedart/src/name.dart';
 import 'package:fakedart/src/phone_number.dart';
 import 'package:fakedart/src/random.dart';
+import 'package:fakedart/src/vehicle.dart';
 
 class Faker {
   final Random random;
@@ -30,6 +31,7 @@ class Faker {
   Internet _internet;
   Finance _finance;
   PhoneNumber _phoneNumber;
+  Vehicle _vehicle;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -83,4 +85,6 @@ class Faker {
   Finance get finance => _finance ??= Finance(this);
 
   PhoneNumber get phoneNumber => _phoneNumber ??= PhoneNumber(this);
+
+  Vehicle get vehicle => _vehicle ??= Vehicle(this);
 }

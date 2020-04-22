@@ -451,3 +451,33 @@ faker.phoneNumber.phoneNumberFormat(); // returns "(!##) !##-####"
 ```dart
 faker.phoneNumber.phoneNumber(); // returns "222.547.8307"
 ```
+
+### Vehicle
+
+```dart
+faker.vehicle.color(); // returns "green"
+```
+
+```dart
+faker.vehicle.fuel(); // returns "Hybrid"
+```
+
+```dart
+faker.vehicle.manufacturer(); // returns "Dodge"
+```
+
+```dart
+faker.vehicle.model(); // returns "Jetta"
+```
+
+```dart
+faker.vehicle.type(); // returns "Wagon"
+```
+
+```dart
+faker.vehicle.vehicle(); // returns "Dodge ATS"
+```
+
+```dart
+faker.vehicle.vin(); // returns "P58HYB6D4LXW25574"
+```
