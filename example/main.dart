@@ -91,4 +91,20 @@ void main() {
   print(faker.internet.protocol());
   print(faker.internet.url());
   print(faker.internet.userName());
+
+  print(faker.finance.account());
+  print(faker.finance.accountName());
+  print(faker.finance.routingNumber());
+  print(faker.finance.amount());
+  print(faker.finance.transactionType());
+  print(faker.finance.currencyCode());
+  print(faker.finance.currencyName());
+  print(faker.finance.currencySymbol());
+  print(faker.finance.bitcoinAddress());
+  print(faker.finance.creditCardCVV());
+  print(faker.finance.ethereumAddress());
+  print(faker.finance.iban(country: 'BR'));
+  print(faker.finance.bic());
+  print(faker.finance.creditCardProvider());
+  print(faker.finance.creditCardNumber('JCB'));
 }

@@ -1,6 +1,5 @@
+import 'package:fakedart/src/constants.dart';
 import 'package:fakedart/src/faker.dart';
-
-const _hexChars = '0123456789abcdef';
 
 class Internet {
   final Faker faker;
@@ -87,7 +86,7 @@ class Internet {
 
   String ipv6() {
     return List.generate(8,
-            (i) => List.generate(4, (k) => faker.random.char(_hexChars)).join())
+            (i) => List.generate(4, (k) => faker.random.char(hexChars)).join())
         .join(':');
   }
 
@@ -111,7 +110,7 @@ class Internet {
     final sb = StringBuffer();
 
     for (var i = 0; i < 12; i++) {
-      sb.write(faker.random.char(_hexChars));
+      sb.write(faker.random.char(hexChars));
 
       if (i.isOdd && i != 11) {
         sb.write(sep);

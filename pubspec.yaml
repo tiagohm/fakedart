@@ -7,6 +7,10 @@ environment:
   sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
+  checkdigit:
+    git:
+      url: https://github.com/tiagohm/checkdigit
+      ref: b7ffbd980e93640ef8bbeb43b0da1b7d36157c68
 
 dev_dependencies:
   test: ^1.14.2

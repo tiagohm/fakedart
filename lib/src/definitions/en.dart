@@ -201,4 +201,29 @@ class EnDefinitions implements Definitions {
 
   @override
   List<String> freeEmail() => en.freeEmail;
+
+  @override
+  List<String> accountType() => en.accountType;
+
+  @override
+  List<String> transactionType() => en.transactionType;
+
+  @override
+  List<String> currencyCode() => en.currency.map((item) => item[1]).toList();
+
+  @override
+  List<String> currencyName() => en.currency.map((item) => item[0]).toList();
+
+  @override
+  List<String> currencySymbol() => en.currency
+      .map((item) => item[2])
+      .where((item) => item.isNotEmpty)
+      .toList();
+
+  @override
+  List<String> creditCardProvider() => en.creditCardProvider;
+
+  @override
+  List<String> creditCard(String provider) =>
+      en.creditCard[provider] ?? const [];
 }

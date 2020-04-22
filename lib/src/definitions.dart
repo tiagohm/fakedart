@@ -153,4 +153,18 @@ abstract class Definitions {
   List<String> exampleEmail();
 
   List<String> freeEmail();
+
+  List<String> accountType();
+
+  List<String> currencyCode();
+
+  List<String> currencySymbol();
+
+  List<String> currencyName();
+
+  List<String> transactionType();
+
+  List<String> creditCardProvider();
+
+  List<String> creditCard(String provider);
 }

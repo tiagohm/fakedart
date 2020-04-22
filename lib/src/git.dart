@@ -1,6 +1,5 @@
+import 'package:fakedart/src/constants.dart';
 import 'package:fakedart/src/faker.dart';
-
-const _hexChars = '0123456789abcdef';
 
 class Git {
   final Faker faker;
@@ -45,7 +44,7 @@ class Git {
     final sb = StringBuffer();
 
     for (var i = 0; i < 40; i++) {
-      sb.write(faker.random.char(_hexChars));
+      sb.write(faker.random.char(hexChars));
     }
 
     return sb.toString();
@@ -55,7 +54,7 @@ class Git {
     final sb = StringBuffer();
 
     for (var i = 0; i < 7; i++) {
-      sb.write(faker.random.char(_hexChars));
+      sb.write(faker.random.char(hexChars));
     }
 
     return sb.toString();

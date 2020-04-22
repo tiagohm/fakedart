@@ -379,3 +379,65 @@ faker.internet.url(); // returns "https://cynthia.biz"
 ```dart
 faker.internet.userName(); // returns "Weldon.Crooks78"
 ```
+
+### Finance
+
+```dart
+faker.finance.account(); // returns "61154668"
+```
+
+```dart
+faker.finance.accountName(); // returns "Savings Account"
+```
+
+```dart
+faker.finance.routingNumber(); // returns "999999992"
+```
+
+```dart
+faker.finance.amount(); // returns "120.11"
+```
+
+```dart
+faker.finance.transactionType(); // returns "120.11"
+```
+
+```dart
+faker.finance.currencyCode(); // returns "AUD"
+```
+
+```dart
+faker.finance.currencySymbol(); // returns "£"
+```
+
+```dart
+faker.finance.currencyName(); // returns "Lempira"
+```
+
+```dart
+faker.finance.bitcoinAddress(); // returns "368nSdrGofQf8EsoPW7j1BZ2cgK"
+```
+
+```dart
+faker.finance.creditCardCVV(); // returns "402"
+```
+
+```dart
+faker.finance.ethereumAddress(); // returns "0x89d524d9ed74d4a53aeb0b8868e20ac3eaad4d2a"
+```
+
+```dart
+faker.finance.iban(); // returns "BR6853001208500339920050065P4"
+```
+
+```dart
+faker.finance.bic(); // returns "CYALNAT1"
+```
+
+```dart
+faker.finance.creditCardProvider(); // returns "Visa"
+```
+
+```dart
+faker.finance.creditCardNumber(); // returns "3541001109818219"
+```

@@ -4,6 +4,7 @@ import 'package:fakedart/src/company.dart';
 import 'package:fakedart/src/database.dart';
 import 'package:fakedart/src/date.dart';
 import 'package:fakedart/src/definitions.dart';
+import 'package:fakedart/src/finance.dart';
 import 'package:fakedart/src/git.dart';
 import 'package:fakedart/src/hacker.dart';
 import 'package:fakedart/src/helpers.dart';
@@ -26,6 +27,7 @@ class Faker {
   Hacker _hacker;
   Git _git;
   Internet _internet;
+  Finance _finance;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -75,4 +77,6 @@ class Faker {
   Git get git => _git ??= Git(this);
 
   Internet get internet => _internet ??= Internet(this);
+
+  Finance get finance => _finance ??= Finance(this);
 }
