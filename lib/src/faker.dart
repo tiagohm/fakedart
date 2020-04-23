@@ -8,6 +8,7 @@ import 'package:fakedart/src/finance.dart';
 import 'package:fakedart/src/git.dart';
 import 'package:fakedart/src/hacker.dart';
 import 'package:fakedart/src/helpers.dart';
+import 'package:fakedart/src/image.dart';
 import 'package:fakedart/src/internet.dart';
 import 'package:fakedart/src/name.dart';
 import 'package:fakedart/src/phone_number.dart';
@@ -32,6 +33,7 @@ class Faker {
   Finance _finance;
   PhoneNumber _phoneNumber;
   Vehicle _vehicle;
+  Image _image;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -87,4 +89,6 @@ class Faker {
   PhoneNumber get phoneNumber => _phoneNumber ??= PhoneNumber(this);
 
   Vehicle get vehicle => _vehicle ??= Vehicle(this);
+
+  Image get image => _image ??= Image(this);
 }

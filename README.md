@@ -481,3 +481,69 @@ faker.vehicle.vehicle(); // returns "Dodge ATS"
 ```dart
 faker.vehicle.vin(); // returns "P58HYB6D4LXW25574"
 ```
+
+### Image
+
+```dart
+faker.image.avatar(); // returns "https://s3.amazonaws.com/uifaces/faces/twitter/dmitriychuta/128.jpg"
+```
+
+```dart
+faker.image.imageUrl(category: 'brazil'); // returns "https://loremflickr.com/640/480/brazil"
+```
+
+```dart
+faker.image.abstract_(); // returns "https://loremflickr.com/640/480/abstract"
+```
+
+```dart
+faker.image.animals(); // returns "https://loremflickr.com/640/480/animals"
+```
+
+```dart
+faker.image.business(); // returns "https://loremflickr.com/640/480/business"
+```
+
+```dart
+faker.image.cats(); // returns "https://loremflickr.com/640/480/cats"
+```
+
+```dart
+faker.image.city(); // returns "https://loremflickr.com/640/480/city"
+```
+
+```dart
+faker.image.fashion(); // returns "https://loremflickr.com/640/480/fashion"
+```
+
+```dart
+faker.image.food(); // returns "https://loremflickr.com/640/480/food"
+```
+
+```dart
+faker.image.nature(); // returns "https://loremflickr.com/640/480/nature"
+```
+
+```dart
+faker.image.nightlife(); // returns "https://loremflickr.com/640/480/nightlife"
+```
+
+```dart
+faker.image.people(); // returns "https://loremflickr.com/640/480/people"
+```
+
+```dart
+faker.image.sports(); // returns "https://loremflickr.com/640/480/sports"
+```
+
+```dart
+faker.image.technics(); // returns "https://loremflickr.com/640/480/technics"
+```
+
+```dart
+faker.image.transport(); // returns "https://loremflickr.com/640/480/transport"
+```
+
+```dart
+faker.image.dataUri(); // returns "data:image/svg+xml;charset=UTF-8,..."
+```

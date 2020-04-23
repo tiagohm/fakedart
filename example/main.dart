@@ -118,4 +118,21 @@ void main() {
   print(faker.vehicle.type());
   print(faker.vehicle.vehicle());
   print(faker.vehicle.vin());
+
+  print(faker.image.avatar());
+  print(faker.image.imageUrl(category: 'brazil'));
+  print(faker.image.abstract_());
+  print(faker.image.animals());
+  print(faker.image.business());
+  print(faker.image.cats());
+  print(faker.image.city());
+  print(faker.image.fashion());
+  print(faker.image.food());
+  print(faker.image.nature());
+  print(faker.image.nightlife());
+  print(faker.image.people());
+  print(faker.image.sports());
+  print(faker.image.technics());
+  print(faker.image.transport());
+  print(faker.image.dataUri());
 }
