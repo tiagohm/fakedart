@@ -10,6 +10,7 @@ import 'package:fakedart/src/hacker.dart';
 import 'package:fakedart/src/helpers.dart';
 import 'package:fakedart/src/image.dart';
 import 'package:fakedart/src/internet.dart';
+import 'package:fakedart/src/lorem.dart';
 import 'package:fakedart/src/name.dart';
 import 'package:fakedart/src/phone_number.dart';
 import 'package:fakedart/src/random.dart';
@@ -34,6 +35,7 @@ class Faker {
   PhoneNumber _phoneNumber;
   Vehicle _vehicle;
   Image _image;
+  Lorem _lorem;
 
   Faker._(this.random, this.locale)
       : assert(random != null),
@@ -91,4 +93,6 @@ class Faker {
   Vehicle get vehicle => _vehicle ??= Vehicle(this);
 
   Image get image => _image ??= Image(this);
+
+  Lorem get lorem => _lorem ??= Lorem(this);
 }

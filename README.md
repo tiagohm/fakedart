@@ -547,3 +547,41 @@ faker.image.transport(); // returns "https://loremflickr.com/640/480/transport"
 ```dart
 faker.image.dataUri(); // returns "data:image/svg+xml;charset=UTF-8,..."
 ```
+
+### Lorem
+
+```dart
+faker.lorem.word(); // returns "saepe"
+```
+
+```dart
+faker.lorem.words(); // returns "praesentium enim rerum"
+```
+
+```dart
+faker.lorem.slug(); // returns "saepe-praesentium-enim"
+```
+
+```dart
+faker.lorem.sentence(); // returns "Rerum ad ipsa"
+```
+
+```dart
+faker.lorem.sentences(); // returns "Velit amet quia Nihil laborum et Consectetur blanditiis enim"
+```
+
+```dart
+faker.lorem.paragraph(); // returns "Dolores laudantium ab Voluptatem quo quidem Quae ut enim Vero in velit"
+```
+
+```dart
+faker.lorem.paragraphs(); // returns "Porro ratione molestiae Quisquam sit et Fugit sequi nesciunt..."
+```
+
+```dart
+faker.lorem.text(); // returns "Enim molestiae similique Deserunt est similique Et"
+```
+
+```dart
+faker.lorem.lines(); // returns "Hic voluptas et..."
+```

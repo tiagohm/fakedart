@@ -177,4 +177,6 @@ abstract class Definitions {
   List<String> vehicleModel();
 
   List<String> vehicleType();
+
+  List<String> loremWord();
 }

@@ -241,4 +241,7 @@ class EnDefinitions implements Definitions {
 
   @override
   List<String> vehicleType() => en.vehicleType;
+
+  @override
+  List<String> loremWord() => en.loremWord;
 }

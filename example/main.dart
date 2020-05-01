@@ -135,4 +135,14 @@ void main() {
   print(faker.image.technics());
   print(faker.image.transport());
   print(faker.image.dataUri());
+
+  print(faker.lorem.word());
+  print(faker.lorem.words());
+  print(faker.lorem.slug());
+  print(faker.lorem.sentence());
+  print(faker.lorem.sentences());
+  print(faker.lorem.paragraph());
+  print(faker.lorem.paragraphs());
+  print(faker.lorem.text());
+  print(faker.lorem.lines());
 }
