@@ -1,9 +1,9 @@
-import 'package:fakedart/src/random.dart';
+import 'package:fakedart/src/faker.dart';
 import 'package:test/test.dart';
 
 void main() {
   test('Max = 10', () {
-    final random = Random();
+    final random = Faker().random;
 
     final c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
@@ -22,7 +22,7 @@ void main() {
   });
 
   test('Min = 4 and Max = 8', () {
-    final random = Random();
+    final random = Faker().random;
 
     final c = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
@@ -41,7 +41,7 @@ void main() {
   });
 
   test('Char', () {
-    final random = Random();
+    final random = Faker().random;
 
     final c = {'a': 0, 'b': 0, 'c': 0};
 
@@ -56,7 +56,7 @@ void main() {
   });
 
   test('List', () {
-    final random = Random();
+    final random = Faker().random;
 
     final c = [0, 0];
 

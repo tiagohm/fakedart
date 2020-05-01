@@ -585,3 +585,45 @@ faker.lorem.text(); // returns "Enim molestiae similique Deserunt est similique 
 ```dart
 faker.lorem.lines(); // returns "Hic voluptas et..."
 ```
+
+### System
+
+```dart
+faker.system.commonFileExt(); // returns "image/gif"
+```
+
+```dart
+faker.system.commonFileName(); // returns "Intranet_Wallis_and_Futuna_backing_up.mpeg"
+```
+
+```dart
+faker.system.commonFileType(); // returns "application"
+```
+
+```dart
+faker.system.directoryPath(); // returns "/home/user"
+```
+
+```dart
+faker.system.fileExt(); // returns "txt"
+```
+
+```dart
+faker.system.fileName(); // returns "RSS_cer"
+```
+
+```dart
+faker.system.filePath(); // returns "/etc/periodic/back_end_Associate_alarm.mpeg"
+```
+
+```dart
+faker.system.fileType(); // returns "chemical"
+```
+
+```dart
+faker.system.mimeType(); // returns "application/vnd.publishare-delta-tree"
+```
+
+```dart
+faker.system.semver(); // returns "2.4.6"
+```

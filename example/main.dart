@@ -145,4 +145,15 @@ void main() {
   print(faker.lorem.paragraphs());
   print(faker.lorem.text());
   print(faker.lorem.lines());
+
+  print(faker.system.commonFileExt());
+  print(faker.system.commonFileName());
+  print(faker.system.commonFileType());
+  print(faker.system.directoryPath());
+  print(faker.system.fileExt());
+  print(faker.system.fileName());
+  print(faker.system.filePath());
+  print(faker.system.fileType());
+  print(faker.system.mimeType());
+  print(faker.system.semver());
 }

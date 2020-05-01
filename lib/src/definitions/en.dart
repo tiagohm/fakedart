@@ -244,4 +244,16 @@ class EnDefinitions implements Definitions {
 
   @override
   List<String> loremWord() => en.loremWord;
+
+  @override
+  List<String> fileExt() => en.fileExt;
+
+  @override
+  List<String> fileType() => en.fileType;
+
+  @override
+  List<String> mimeType() => en.mimeType;
+
+  @override
+  List<String> directoryPath() => en.directoryPath;
 }

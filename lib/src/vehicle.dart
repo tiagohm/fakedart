@@ -27,7 +27,7 @@ class Vehicle {
 
   String vin() {
     final a = faker.random.alphaNumeric(10).toUpperCase();
-    final b = faker.random.alpha(1, upcase: true);
+    final b = faker.random.alpha(1, upper: true);
     final c = faker.random.alphaNumeric(1).toUpperCase();
     final d = faker.random.nextInt(100000, 10000); // five digits.
     return '$a$b$c$d';

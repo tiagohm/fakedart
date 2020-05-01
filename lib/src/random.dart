@@ -1,15 +1,14 @@
 import 'dart:math' as math;
 
 import 'package:fakedart/src/constants.dart';
+import 'package:fakedart/src/faker.dart';
 
 class Random {
+  final Faker faker;
   final math.Random _random;
+  List<String Function()> _wordMethods;
 
-  Random() : _random = math.Random();
-
-  Random.seed(int seed) : _random = math.Random(seed);
-
-  Random.secure() : _random = math.Random.secure();
+  Random(this.faker, math.Random random) : _random = random;
 
   bool nextBool() => _random.nextBool();
 
@@ -73,11 +72,49 @@ class Random {
 
   String alpha(
     int n, {
-    bool upcase,
+    bool upper,
   }) {
-    final provider = upcase == null
+    final provider = upper == null
         ? list(const [alphaUppercaseChars, alphaChars])
-        : (upcase ? alphaUppercaseChars : alphaChars);
+        : (upper ? alphaUppercaseChars : alphaChars);
     return count(provider, n);
+  }
+
+  String word() {
+    _wordMethods ??= [
+      faker.commerce.product,
+      faker.commerce.department,
+      faker.commerce.productName,
+      faker.commerce.productMaterial,
+      faker.commerce.productAdjective,
+      faker.commerce.color,
+      faker.company.catchPhraseAdjective,
+      faker.company.catchPhraseDescriptor,
+      faker.company.catchPhraseNoun,
+      faker.company.bsAdjective,
+      faker.company.bsBuzz,
+      faker.company.bsNoun,
+      faker.address.streetSuffix,
+      faker.address.county,
+      faker.address.country,
+      faker.address.state,
+      faker.finance.accountName,
+      faker.finance.transactionType,
+      faker.finance.currencyName,
+      faker.hacker.noun,
+      faker.hacker.verb,
+      faker.hacker.adjective,
+      faker.hacker.ingVerb,
+      faker.hacker.abbreviation,
+      faker.name.jobDescriptor,
+      faker.name.jobArea,
+      faker.name.jobType,
+    ];
+
+    return list(_wordMethods)();
+  }
+
+  String words({int count}) {
+    return List.generate(count ?? nextInt(4, 1), (i) => word()).join(' ');
   }
 }

@@ -179,4 +179,12 @@ abstract class Definitions {
   List<String> vehicleType();
 
   List<String> loremWord();
+
+  List<String> fileExt();
+
+  List<String> fileType();
+
+  List<String> mimeType();
+
+  List<String> directoryPath();
 }

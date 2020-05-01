@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:fakedart/src/address.dart';
 import 'package:fakedart/src/commerce.dart';
 import 'package:fakedart/src/company.dart';
@@ -14,12 +16,15 @@ import 'package:fakedart/src/lorem.dart';
 import 'package:fakedart/src/name.dart';
 import 'package:fakedart/src/phone_number.dart';
 import 'package:fakedart/src/random.dart';
+import 'package:fakedart/src/system.dart';
 import 'package:fakedart/src/vehicle.dart';
 
 class Faker {
-  final Random random;
+  final int seed;
+  final bool secure;
   final String locale;
 
+  Random _random;
   Definitions _definitions;
   Helpers _helpers;
   Address _address;
@@ -36,33 +41,35 @@ class Faker {
   Vehicle _vehicle;
   Image _image;
   Lorem _lorem;
+  System _system;
 
-  Faker._(this.random, this.locale)
-      : assert(random != null),
-        assert(locale != null && locale.isNotEmpty);
+  Faker._({
+    this.seed,
+    this.secure = false,
+    this.locale,
+  });
 
   factory Faker({
     String locale = 'en',
   }) {
-    return Faker._(Random(), locale);
+    return Faker._(locale: locale);
   }
 
   factory Faker.seed(
     int seed, {
     String locale = 'en',
   }) {
-    return Faker._(Random.seed(seed), locale);
+    return Faker._(seed: seed, locale: locale);
   }
 
   factory Faker.secure({
     String locale = 'en',
   }) {
-    return Faker._(Random.secure(), locale);
+    return Faker._(secure: true, locale: locale);
   }
 
-  Faker withLocale(String locale) {
-    return Faker._(random, locale);
-  }
+  Random get random => _random ??=
+      Random(this, secure ? math.Random.secure() : math.Random(seed));
 
   Definitions get definitions => _definitions ??= Definitions(this, locale);
 
@@ -95,4 +102,6 @@ class Faker {
   Image get image => _image ??= Image(this);
 
   Lorem get lorem => _lorem ??= Lorem(this);
+
+  System get system => _system ?? System(this);
 }
