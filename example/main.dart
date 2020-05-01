@@ -3,6 +3,7 @@ import 'package:fakedart/fakedart.dart';
 void main() {
   final faker = Faker.seed(0);
 
+  print('### ADDRESS ###');
   print(faker.address.cardinalDirection());
   print(faker.address.city());
   print(faker.address.cityPrefix());
@@ -22,6 +23,7 @@ void main() {
   print(faker.address.streetSuffix());
   print(faker.address.zipCode());
 
+  print('### NAME ###');
   print(faker.name.firstName());
   print(faker.name.gender());
   print(faker.name.jobArea());
@@ -33,6 +35,7 @@ void main() {
   print(faker.name.suffix());
   print(faker.name.fullName());
 
+  print('### COMMERCE ###');
   print(faker.commerce.color());
   print(faker.commerce.department());
   print(faker.commerce.product());
@@ -41,6 +44,7 @@ void main() {
   print(faker.commerce.productName());
   print(faker.commerce.price(symbol: r'$'));
 
+  print('### COMPANY ###');
   print(faker.company.bs());
   print(faker.company.bsAdjective());
   print(faker.company.bsBuzz());
@@ -52,11 +56,13 @@ void main() {
   print(faker.company.companyName());
   print(faker.company.companySuffix());
 
+  print('### DATABASE ###');
   print(faker.database.engine());
   print(faker.database.collation());
   print(faker.database.column());
   print(faker.database.type());
 
+  print('### DATE ###');
   print(faker.date.between(DateTime(1994, 1, 1), DateTime.now()));
   print(faker.date.future());
   print(faker.date.past());
@@ -65,6 +71,7 @@ void main() {
   print(faker.date.weekday());
   print(faker.date.month(abbr: true));
 
+  print('### HACKER ###');
   print(faker.hacker.abbreviation());
   print(faker.hacker.adjective());
   print(faker.hacker.ingVerb());
@@ -72,12 +79,14 @@ void main() {
   print(faker.hacker.phrase());
   print(faker.hacker.verb());
 
+  print('### GIT ###');
   print(faker.git.branch());
   print(faker.git.commitEntry());
   print(faker.git.commitMessage());
   print(faker.git.commitSha());
   print(faker.git.shortSha());
 
+  print('### INTERNET ###');
   print(faker.internet.avatar());
   print(faker.internet.color());
   print(faker.internet.domainName());
@@ -91,7 +100,9 @@ void main() {
   print(faker.internet.protocol());
   print(faker.internet.url());
   print(faker.internet.userName());
+  print(faker.internet.password());
 
+  print('### FINANCE ###');
   print(faker.finance.account());
   print(faker.finance.accountName());
   print(faker.finance.routingNumber());
@@ -108,9 +119,11 @@ void main() {
   print(faker.finance.creditCardProvider());
   print(faker.finance.creditCardNumber('JCB'));
 
+  print('### PHONE NUMBER ###');
   print(faker.phoneNumber.phoneNumberFormat());
   print(faker.phoneNumber.phoneNumber());
 
+  print('### VEHICLE ###');
   print(faker.vehicle.color());
   print(faker.vehicle.fuel());
   print(faker.vehicle.manufacturer());
@@ -119,6 +132,7 @@ void main() {
   print(faker.vehicle.vehicle());
   print(faker.vehicle.vin());
 
+  print('### IMAGE ###');
   print(faker.image.avatar());
   print(faker.image.imageUrl(category: 'brazil'));
   print(faker.image.abstract_());
@@ -136,6 +150,7 @@ void main() {
   print(faker.image.transport());
   print(faker.image.dataUri());
 
+  print('### LOREM ###');
   print(faker.lorem.word());
   print(faker.lorem.words());
   print(faker.lorem.slug());
@@ -146,6 +161,7 @@ void main() {
   print(faker.lorem.text());
   print(faker.lorem.lines());
 
+  print('### SYSTEM ###');
   print(faker.system.commonFileExt());
   print(faker.system.commonFileName());
   print(faker.system.commonFileType());

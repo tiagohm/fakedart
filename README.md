@@ -380,6 +380,10 @@ faker.internet.url(); // returns "https://cynthia.biz"
 faker.internet.userName(); // returns "Weldon.Crooks78"
 ```
 
+```dart
+faker.internet.password(); // returns "bLQiLGL2TXov8uQ"
+```
+
 ### Finance
 
 ```dart

@@ -120,8 +120,23 @@ class Internet {
     return sb.toString();
   }
 
-  // TODO:
-  String password() {
-    throw UnimplementedError();
+  String password([int length]) {
+    length ??= 15;
+
+    final sb = StringBuffer();
+
+    for (var i = 0; i < length; i++) {
+      final prob = faker.random.nextInt(100);
+
+      if (prob < 10) {
+        sb.write(faker.random.char(numericChars));
+      } else if (faker.random.nextBool()) {
+        sb.write(faker.random.char(alphaUppercaseChars));
+      } else {
+        sb.write(faker.random.char(alphaChars));
+      }
+    }
+
+    return sb.toString();
   }
 }
